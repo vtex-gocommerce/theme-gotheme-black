@@ -1,0 +1,18 @@
+.informationsContainer > div[class*="justify-between"] {
+    display: block;
+}
+
+.informationsContainer div[class*="specificationsTableContainer"] {
+    padding: 0;
+}
+
+.priceContainer+div > button {
+    background: #47BE4C;
+    border-color: #47BE4C;
+    padding: 16px 0;
+}
+
+.fixedButton button {
+    background: #47BE4C;
+    border-color: #47BE4C;
+}

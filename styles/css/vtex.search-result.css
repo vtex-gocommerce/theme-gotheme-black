@@ -1,0 +1,8 @@
+.container {
+    margin-bottom: 100px;
+}
+
+.filters [class*="vtex__icon-check"] {
+    top: 2px;
+    position: relative;
+}

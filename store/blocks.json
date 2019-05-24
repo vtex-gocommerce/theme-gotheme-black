@@ -1,0 +1,961 @@
+{
+  "store.home": {
+    "blocks": [
+      "carousel#home",
+      "flex-layout.row#tarja",
+      "flex-layout.row#carousel",
+      "shelf#home2",
+      "shelf#home",
+      "newsletter"
+    ]
+  },
+
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#4-desktop",
+      "header-row#5-desktop"
+    ]
+  },
+
+  "header-row#1-desktop": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "header-row#2-desktop": {
+    "children": [
+      "notification.bar#home"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+    }
+  },
+
+  "header-row#3-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "header-spacer",
+      "vtex.menu@2.x:menu#institutional"
+    ],
+    "props": {
+      "blockClass": "menu-link"
+    }
+  },
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#shop",
+      "menu-item#blog"
+    ]
+  },
+  "menu-item#shop": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    }
+  },
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "Blog"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      "menu-item#vtex-website"
+    ]
+  },
+  "menu-item#vtex-website": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "visit vtex.com"
+      }
+    }
+  },
+
+  "header-row#4-desktop": {
+    "children": [
+      "logo",
+      "header-spacer",
+      "search-bar",
+      "header-spacer",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
+  "vtex.menu@2.x:menu#category-menu": {
+    "children": [
+      "menu-item#category-clothing",
+      "menu-item#category-decoration",
+      "menu-item#category-notebooks",
+      "menu-item#custom-sale"
+    ]
+  },
+  "menu-item#category-clothing": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 16
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-clothing"
+    ]
+  },
+  "header-row#5-desktop": {
+    "children": [
+      "category-menu"
+    ],
+    "props": {
+      "sticky": false,
+      "blockClass": "main-menu"
+    }
+  },
+  "vtex.menu@2.x:submenu#category-clothing": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-clothing"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-clothing": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-clothing-hats",
+      "menu-item#category-clothing-shoes",
+      "menu-item#category-clothing-bags",
+      "menu-item#category-clothing-accessories"
+    ]
+  },
+  "menu-item#category-clothing-hats": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 16
+      }
+    }
+  },
+  "menu-item#category-clothing-shoes": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10
+      }
+    }
+  },
+  "menu-item#category-clothing-bags": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 11
+      }
+    }
+  },
+  "menu-item#category-clothing-accessories": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 25
+      }
+    }
+  },
+  "menu-item#category-decoration": {
+    "props": {
+      "id": "menu-item-category-decoration",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 2
+      }
+    }
+  },
+  "menu-item#category-notebooks": {
+    "props": {
+      "id": "menu-item-category-notebooks",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 26
+      }
+    }
+  },
+  "menu-item#custom-sale": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#custom-sale"
+    ]
+  },
+  "vtex.menu@2.x:submenu#custom-sale": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#custom-sale",
+      "info-card#home"
+    ]
+  },
+  "vtex.menu@2.x:menu#custom-sale": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-clothing-hats",
+      "menu-item#category-clothing-shoes"
+    ]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "width": 200,
+      "height": 100,
+      "url": "https://static.gocommerce.com/{{account}}/assets/gocommerce/png/logo.png"
+    }
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "",
+      "labelButtonFinishShopping": "Finalizar compra",
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "gray"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile",
+      "header-row#2-mobile"
+    ]
+  },
+  "header-row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "header-spacer",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "header-row#2-mobile": {
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-search-mobile"
+    }
+  },
+
+  "drawer": {
+    "children": [
+      "category-menu"
+    ]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-clothing",
+      "menu-item#category-decoration",
+      "menu-item#category-notebooks",
+      "menu-item#custom-sale"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "carousel#home": {
+    "props": {
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle___30700c7c3d505aff7e1698e5ef7f590d.png",
+          "mobileImage": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle___30700c7c3d505aff7e1698e5ef7f590d.png"
+        },
+        {
+          "image": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle___30700c7c3d505aff7e1698e5ef7f590d.png",
+          "mobileImage": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle___30700c7c3d505aff7e1698e5ef7f590d.png"
+        }
+      ],
+      "height": 500,
+      "showArrows": true,
+      "showDots": true
+    }
+  },
+
+  "flex-layout.row#carousel": {
+    "children": [
+      "carousel#mini1", 
+      "carousel#mini2",
+      "carousel#mini3"
+    ],
+    "props": {
+      "blockClass": "mini-banners"
+    }
+  },
+
+  "carousel#mini1": {
+    "props": {
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle22___5473a20124197dc4cd003a82ac0ade22.png",
+          "mobileImage": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle22___5473a20124197dc4cd003a82ac0ade22.png"
+        }
+      ],
+      "height": 300,
+      "showArrows": false,
+      "showDots": true
+    }
+  },
+  "carousel#mini2": {
+    "props": {
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle22___5473a20124197dc4cd003a82ac0ade22.png",
+          "mobileImage": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle22___5473a20124197dc4cd003a82ac0ade22.png"
+        }
+      ],
+      "height": 300,
+      "showArrows": false,
+      "showDots": true
+    }
+  },
+  "carousel#mini3": {
+    "props": {
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle22___5473a20124197dc4cd003a82ac0ade22.png",
+          "mobileImage": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle22___5473a20124197dc4cd003a82ac0ade22.png"
+        }
+      ],
+      "height": 300,
+      "showArrows": false,
+      "showDots": true
+    }
+  },
+
+  "flex-layout.row#tarja": {
+    "children": [
+      "carousel#tarja"
+    ],
+    "props": {
+      "blockClass": "tarja-banners"
+    }
+  },
+
+  "carousel#tarja": {
+    "props": {
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle2___74dad2eee1a78d1a3343f8a23bf8f8ca.png",
+          "mobileImage": "https://static.gocommerce.com/gc-jts0624/assets/gocommerce/png/rectangle2___74dad2eee1a78d1a3343f8a23bf8f8ca.png"
+        }
+      ],
+      "height": 50,
+      "showArrows": false,
+      "showDots": true
+    }
+  },
+
+  "flex-layout.row#deals": {
+    "children": [
+      "info-card#deal1",
+      "info-card#deal2",
+      "info-card#deal3"
+    ],
+    "props": {
+      "blockClass": "deals"
+    }
+  },
+  "info-card#deal1": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "subhead": "Free shipping",
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
+    }
+  },
+  "info-card#deal2": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "subhead": "One day delivery",
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
+    }
+  },
+  "info-card#deal3": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "subhead": "One day delivery",
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
+    }
+  },
+  "info-card#deal4": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
+      "subhead": "Exclusive deals",
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
+    }
+  },
+
+
+
+  "shelf#home": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Mais vendidos",
+        "summary": {
+          "isOneClickBuy": false,
+          "showBadge": true,
+          "badgeText": "OFF",
+          "buyButtonText": "Comprar",
+          "displayBuyButton": "displayButtonAlways",
+          "showCollections": false,
+          "showListPrice": true,
+          "showLabels": false,
+          "showInstallments": true,
+          "showSavings": true,
+          "name": {
+            "showBrandName": false,
+            "showSku": false,
+            "showProductReference": false
+          }
+        }
+      }
+    }
+  },
+
+  "shelf#home2": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Lançamentos",
+        "summary": {
+          "isOneClickBuy": false,
+          "showBadge": true,
+          "badgeText": "OFF",
+          "buyButtonText": "Comprar",
+          "displayBuyButton": "displayButtonAlways",
+          "showCollections": false,
+          "showListPrice": true,
+          "showLabels": false,
+          "showInstallments": true,
+          "showSavings": true,
+          "name": {
+            "showBrandName": false,
+            "showSku": false,
+            "showProductReference": false
+          }
+        }
+      }
+    }
+  },
+
+
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Example of a call to action text",
+      "callToActionText": "DISCOVER",
+      "blockClass": "info-card-home"
+    }
+  },
+
+
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com",
+      "blockClass": "link"
+    }
+  },
+
+  "footer": {
+    "props": {
+      "showPaymentFormsInColor": true,
+      "showSocialNetworksInColor": false,
+      "showVtexLogoInColor": false,
+      "socialNetworks": [
+        {
+          "__editorItemTitle": "Facebook",
+          "socialNetwork": "Facebook",
+          "url": "https://www.facebook.com/"
+        },
+        {
+          "__editorItemTitle": "Instagram",
+          "socialNetwork": "Instagram",
+          "url": "https://www.instagram.com/"
+        }
+      ],
+      "sectionLinks": [
+        {
+          "__editorItemTitle": "Institucional",
+          "title": "Institucional",
+          "links": [
+            {
+              "__editorItemTitle": "Quem Somos",
+              "title": "Quem Somos",
+              "url": "/quem-somos"
+            },
+            {
+              "__editorItemTitle": "Política de troca e devoluções",
+              "title": "Política de troca e devoluções",
+              "url": "/politica-de-troca-e-devolucoes"
+            },
+            {
+              "__editorItemTitle": "Segurança e Privacidade",
+              "title": "Segurança e Privacidade",
+              "url": "/seguranca-e-privacidade"
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "Ajuda e Suporte",
+          "title": "Ajuda e Suporte",
+          "links": [
+            {
+              "__editorItemTitle": "Fale Conosco",
+              "title": "Fale Conosco",
+              "url": "/fale-conosco"
+            },
+            {
+              "__editorItemTitle": "Dúvidas frequentes",
+              "title": "Dúvidas frequentes",
+              "url": "/duvidas-frequentes"
+            },
+            {
+              "__editorItemTitle": "Formas de pagamento",
+              "title": "Formas de pagamento",
+              "url": "/formas-de-pagamento"
+            }
+          ]
+        }
+      ],
+      "badges": [],
+      "paymentForms": [
+        {
+          "__editorItemTitle": "Crédito",
+          "title": "Crédito",
+          "paymentTypes": ["MasterCard", "Visa", "Diners Club"]
+        }
+      ],
+      "storeInformations": [
+        {
+          "__editorItemTitle": "Informação da Loja",
+          "storeInformation": "Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pela nossa Loja. O valor de oferta do produto será garantido após a finalização da compra. Havendo divergência, prevalecerá o menor preço ofertado. \n\n\n"
+        },
+        {
+          "__editorItemTitle": "Endereço",
+          "storeInformation": "Av. Brg. Faria Lima, 4440 - Itaim Bibi, São Paulo - SP, 04538-132"
+        }
+      ]
+    }
+  },
+  
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+
+
+  "store.home.custom#quem-somos": {
+    "blocks": ["institutional-page"],
+    "props": {
+      "headline": "Quem Somos",
+      "html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lorem nulla, cursus non hendrerit ut, condimentum vitae velit. Proin aliquet lorem sagittis orci efficitur dapibus. Aenean dignissim est non orci feugiat, non ultricies urna maximus.<br/><br/><span class=\"t-heading-3\">1. Introdução</span><br/><br/>Quisque arcu magna, faucibus ac dignissim vitae, accumsan et enim. Nam auctor ipsum at purus interdum ultricies. Vestibulum viverra in leo quis pharetra. Nullam nec urna pharetra, gravida velit sed, hendrerit ex. <br/><br/>Curabitur feugiat interdum nunc sit amet hendrerit. Duis magna elit, pellentesque ut justo quis, ullamcorper vulputate nibh. Donec luctus pretium sagittis. Aliquam erat volutpat. In interdum pharetra augue sit amet ultricies. Curabitur eu mauris odio. Praesent iaculis metus id nunc lobortis efficitur. Proin vestibulum, est quis placerat accumsan, nisi lectus ultricies nulla, at convallis purus justo eget lacus.<br/><br/>In non turpis congue, dictum massa eget, consequat justo. Integer magna augue, eleifend id est et, tempor aliquam lacus. Proin blandit risus eleifend tortor fringilla ultrices. <br/><br/> <span class=\"t-heading-3\">2. Procedimento de entrega</span><br/><br/>Etiam purus velit, pulvinar a cursus varius, ornare id eros. Pellentesque molestie dolor nibh, vel sodales odio pulvinar ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla ornare venenatis ex sit amet auctor. Etiam a felis in nibh pellentesque pellentesque tristique id magna. Praesent id arcu mollis, auctor massa non, semper nunc. Phasellus bibendum dictum libero in rutrum. Etiam fringilla enim vitae ipsum iaculis consequat. Nulla in blandit mi. Nulla ut erat accumsan, tristique nisi nec, blandit augue. Aliquam auctor egestas augue eu eleifend. Nunc a ante tellus.<br/><br/><span class=\"t-heading-3\">3. Disponibilidade de produtos</span><br/><br/>Aenean sodales porta sollicitudin. Fusce dapibus elit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut nibh hendrerit, placerat elit et, pharetra nulla. Proin placerat sit amet nibh sed varius. Vestibulum velit ipsum, tempor lobortis ornare at, tristique ultricies dui. Phasellus vel iaculis lectus. Phasellus vulputate risus porttitor rutrum posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In sodales ac odio sed sagittis. Donec eget tellus tincidunt ipsum convallis aliquet. Maecenas sit amet turpis lorem. Nam tempor lacus id magna blandit faucibus. Praesent et mauris ut dolor rhoncus blandit. Integer quis malesuada risus, ac viverra elit. Vestibulum lacinia sed mauris placerat blandit.<br/><br/> <span class=\"t-heading-3\">4. Pagamentos</span><br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lorem nulla, cursus non hendrerit ut, condimentum vitae velit. Proin aliquet lorem sagittis orci efficitur dapibus. Aenean dignissim est non orci feugiat, non ultricies urna maximus. Quisque arcu magna, faucibus ac dignissim vitae, accumsan et enim. Nam auctor ipsum at purus interdum ultricies. Vestibulum viverra in leo quis pharetra. Nullam nec urna pharetra, gravida velit sed, hendrerit ex. Nulla finibus dapibus diam, in egestas justo dictum quis.<br/><br/><span class=\"t-heading-3\">5. Cancelamento de compras</span><br/><br/>Curabitur feugiat interdum nunc sit amet hendrerit. Duis magna elit, pellentesque ut justo quis, ullamcorper vulputate nibh. Donec luctus pretium sagittis. Aliquam erat volutpat. In interdum pharetra augue sit amet ultricies. Curabitur eu mauris odio. Praesent iaculis metus id nunc lobortis efficitur. Proin vestibulum, est quis placerat accumsan, nisi lectus ultricies nulla, at convallis purus justo eget lacus. <br/><br/> <span class=\"t-heading-3\">7. Garantia dos produtos</span><br/><br/>In non turpis congue, dictum massa eget, consequat justo. Integer magna augue, eleifend id est et, tempor aliquam lacus. Proin blandit risus eleifend tortor fringilla ultrices. Aliquam dignissim ut arcu eget tincidunt. Ut in rhoncus mi, in congue est. Donec quis felis in dui tincidunt rhoncus quis et neque. Proin posuere dui urna, vel molestie purus molestie at. Etiam fermentum scelerisque odio vel dignissim. Duis blandit diam nec mauris sodales, eu ullamcorper purus maximus. In sed dolor rutrum, interdum orci vitae, dignissim sapien.<br/><br/>"
+    }
+  },
+  "store.home.custom#forma-de-pagamento": {
+    "blocks": ["institutional-page"],
+    "props": {
+      "headline": "Formas de Pagamento",
+      "html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lorem nulla, cursus non hendrerit ut, condimentum vitae velit. Proin aliquet lorem sagittis orci efficitur dapibus. Aenean dignissim est non orci feugiat, non ultricies urna maximus. Quisque arcu magna, faucibus ac dignissim vitae, accumsan et enim. Nam auctor ipsum at purus interdum ultricies. Vestibulum viverra in leo quis pharetra. Nullam nec urna pharetra, gravida velit sed, hendrerit ex. Nulla finibus dapibus diam, in egestas justo dictum quis.<br/><br/> <span class=\"t-heading-3\">Cadastre-se e compre com tranquilidade, sem preocupações.</span><br/><br/>Curabitur feugiat interdum nunc sit amet hendrerit. Duis magna elit, pellentesque ut justo quis, ullamcorper vulputate nibh. Donec luctus pretium sagittis. Aliquam erat volutpat. In interdum pharetra augue sit amet ultricies. Curabitur eu mauris odio. Praesent iaculis metus id nunc lobortis efficitur. Proin vestibulum, est quis placerat accumsan, nisi lectus ultricies nulla, at convallis purus justo eget lacus.<br/><br/>"
+    }
+  },
+  "store.home.custom#politica-de-troca-e-devolucoes": {
+    "blocks": ["institutional-page"],
+    "props": {
+      "headline": "Política de Troca e Devoluções",
+      "html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lorem nulla, cursus non hendrerit ut, condimentum vitae velit. Proin aliquet lorem sagittis orci efficitur dapibus. Aenean dignissim est non orci feugiat, non ultricies urna maximus. Quisque arcu magna, faucibus ac dignissim vitae, accumsan et enim. Nam auctor ipsum at purus interdum ultricies. Vestibulum viverra in leo quis pharetra. Nullam nec urna pharetra, gravida velit sed, hendrerit ex. Nulla finibus dapibus diam, in egestas justo dictum quis.<br/><br/><span class=\"t-heading-3\">COMO FAZER UMA DEVOLUÇÃO</span><br/><br/>In non turpis congue, dictum massa eget, consequat justo. Integer magna augue, eleifend id est et, tempor aliquam lacus. Proin blandit risus eleifend tortor fringilla ultrices. Aliquam dignissim ut arcu eget tincidunt. Ut in rhoncus mi, in congue est. Donec quis felis in dui tincidunt rhoncus quis et neque. Proin posuere dui urna, vel molestie purus molestie at. Etiam fermentum scelerisque odio vel dignissim. Duis blandit diam nec mauris sodales, eu ullamcorper purus maximus. In sed dolor rutrum, interdum orci vitae, dignissim sapien.<br/><br/><span class=\"t-heading-3\">CONDIÇÕES GERAIS:</span><br/><br/>Etiam purus velit, pulvinar a cursus varius, ornare id eros. Pellentesque molestie dolor nibh, vel sodales odio pulvinar ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla ornare venenatis ex sit amet auctor. Etiam a felis in nibh pellentesque pellentesque tristique id magna. Praesent id arcu mollis, auctor massa non, semper nunc. Phasellus bibendum dictum libero in rutrum. Etiam fringilla enim vitae ipsum iaculis consequat. Nulla in blandit mi. Nulla ut erat accumsan, tristique nisi nec, blandit augue. Aliquam auctor egestas augue eu eleifend. Nunc a ante tellus. <br/><br/><span class=\"t-heading-3\">enean sodales porta sollicitudin. Fusce dapibus elit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut nibh hendrerit, placerat elit et, pharetra nulla. Proin placerat sit amet nibh sed varius. Vestibulum velit ipsum, tempor lobortis ornare at, tristique ultricies dui. Phasellus vel iaculis lectus.<br/><br/><span class=\"t-heading-3\">ESTORNO:</span><br/><br/>Phasellus vulputate risus porttitor rutrum posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In sodales ac odio sed sagittis. Donec eget tellus tincidunt ipsum convallis aliquet. Maecenas sit amet turpis lorem. <br/><br/>"
+    }
+  },
+  "store.home.custom#seguranca-e-privacidade": {
+    "blocks": ["institutional-page"],
+    "props": {
+      "headline": "Segurança e Privacidade",
+      "html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lorem nulla, cursus non hendrerit ut, condimentum vitae velit. Proin aliquet lorem sagittis orci efficitur dapibus. Aenean dignissim est non orci feugiat, non ultricies urna maximus. Quisque arcu magna, faucibus ac dignissim vitae, accumsan et enim. Nam auctor ipsum at purus interdum ultricies. Vestibulum viverra in leo quis pharetra. Nullam nec urna pharetra, gravida velit sed, hendrerit ex. Nulla finibus dapibus diam, in egestas justo dictum quis.<br/><br/> <span class=\"t-heading-3\">Cadastre-se e compre com tranquilidade, sem preocupações.</span><br/><br/>Curabitur feugiat interdum nunc sit amet hendrerit. Duis magna elit, pellentesque ut justo quis, ullamcorper vulputate nibh. Donec luctus pretium sagittis. Aliquam erat volutpat. In interdum pharetra augue sit amet ultricies. Curabitur eu mauris odio. Praesent iaculis metus id nunc lobortis efficitur. Proin vestibulum, est quis placerat accumsan, nisi lectus ultricies nulla, at convallis purus justo eget lacus.<br/><br/>"
+    }
+  },
+
+
+
+
+  "store.product": {
+    "blocks": [
+      "product-details#default",
+      "product-kit",
+      "shelf.relatedProducts"
+    ]
+  },
+
+
+
+
+
+
+  "store.search": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#brand": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#department": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#category": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.account": {
+    "blocks": [
+      "my-account"
+    ],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+
+
+
+
+
+  "store.login": {
+    "blocks": [
+      "login-content#default"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+  "store.custom#staticpage": {
+    "blocks": ["flex-layout.row#staticpage"]
+  },
+  "flex-layout.row#staticpage": {
+    "children": ["flex-layout.col#staticpage"]
+  },
+  "flex-layout.col#staticpage": {
+    "children": ["rich-text#staticpage-title", "sandbox#staticpage-body"]
+  },
+  "rich-text#staticpage-title": {
+    "props": {
+      "text": ""
+    }
+  },
+  "sandbox#staticpage-body": {
+    "props": {
+      "content": ""
+    }
+  },
+
+
+
+
+
+
+
+
+  "product-details#default": {
+    "blocks": [
+      "breadcrumb",
+      "product-name",
+      "product-images",
+      "product-price",
+      "product-description",
+      "product-specifications",
+      "buy-button",
+      "sku-selector",
+      "shipping-simulator",
+      "availability-subscriber",
+      "share"
+    ],
+    "props": {
+      "displayVertically": true,
+      "share": {
+        "social": {
+          "Facebook": true,
+          "WhatsApp": true,
+          "Twitter": false
+        }
+      },
+      "price": {
+        "labelSellingPrice": null,
+        "showListPrice": true,
+        "showLabels": true,
+        "showInstallments": true,
+        "showSavings": true
+      },
+      "name": {
+        "showBrandName": false,
+        "showSku": false,
+        "showProductReference": false
+      }
+    }
+  },
+  "search-result": {
+    "blocks": [
+      "filter-navigator",
+      "gallery",
+      "not-found",
+      "breadcrumb",
+      "order-by",
+      "total-products"
+    ],
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 4,
+        "orderByField": "OrderByPriceDESC"
+      },
+      "hiddenFacets": {
+        "layoutMode1": "normal",
+        "layoutMode2": "small",
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "__editorItemTitle": "editor.search-result.hiddenFacets.specificationFilters.hiddenFilter"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "isOneClickBuy": false,
+        "showBadge": true,
+        "displayBuyButton": "displayButtonAlways",
+        "showCollections": false,
+        "labelSellingPrice": null,
+        "showListPrice": true,
+        "showLabels": true,
+        "showInstallments": false,
+        "showSavings": false,
+        "name": {
+          "showBrandName": false,
+          "showSku": false,
+          "showProductReference": false
+        }
+      },
+      "pagination": "show-more"
+    }
+  }
+}
+

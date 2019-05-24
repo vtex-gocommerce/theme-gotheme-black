@@ -1,0 +1,13 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 30px;
+    color: #000;
+}
+
+.container [class*="sliderFrame"] > li {
+    padding: 10px;
+}

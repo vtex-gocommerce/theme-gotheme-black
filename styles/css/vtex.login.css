@@ -1,0 +1,8 @@
+.label {
+    color: #000;
+}
+
+.container [class*="gray"], .buttonLink div[class*="gray"]  {
+    color: #000;
+}
+

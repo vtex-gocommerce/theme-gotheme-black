@@ -1,0 +1,18 @@
+.flexRow--mini-banners > section > div > div[class*="w-100"] {
+    margin: 40px 20px ;
+}
+
+.flexRow--tarja-banners > section{
+    padding: 0;
+    margin: 20px auto 0;
+}
+
+.stretchChildrenWidth {
+    padding: 20px;
+}
+
+@media screen and (max-width: 40rem) {
+    .flexRow--mini-banners, .flexRow--tarja-banners {
+        display: none;
+    }
+}

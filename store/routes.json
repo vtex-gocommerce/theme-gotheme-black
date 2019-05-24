@@ -1,0 +1,14 @@
+{
+  "store.home.custom#quem-somos": {
+    "path": "/quem-somos"
+  },
+  "store.home.custom#forma-de-pagamento": {
+    "path": "/formas-de-pagamento"
+  },
+  "store.home.custom#politica-de-troca-e-devolucoes": {
+    "path": "/politica-de-troca-e-devolucoes"
+  },
+  "store.home.custom#seguranca-e-privacidade": {
+    "path": "/seguranca-e-privacidade"
+  }
+}

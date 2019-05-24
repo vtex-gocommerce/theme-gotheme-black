@@ -1,0 +1,9 @@
+@media screen and (max-width: 40rem) {
+    .drawer::-webkit-scrollbar { 
+        display: none; 
+    }
+
+    .drawer {
+        overflow: scroll;
+    }
+}

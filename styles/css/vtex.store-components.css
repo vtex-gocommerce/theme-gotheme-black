@@ -1,0 +1,74 @@
+.infoCardContainer {
+    max-width: 1140px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #f1f1f1;
+}
+
+.shareSocialIcon circle {
+    fill: #444;
+}
+
+.searchBarContainer {
+    width: 50%;
+}
+
+.searchBarContainer input {
+    height: 48px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+}
+
+.sellingPrice {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.newsletter {
+    background-color: #f1f1f1;
+}
+
+.newsletter input {
+    background: none;
+    border: 0; 
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.logoContainer {
+    height: 70px;
+    max-height: 100px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 40px;
+}
+
+.logoContainer img {
+    height: auto!important;
+    position: absolute;
+    width: auto;
+    max-width: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 40rem) {
+    .logoContainer img {
+        max-width: 100%;
+    }
+
+    .searchBarContainer {
+        width: 100%;
+        padding: 0 0 10px;
+    }
+}

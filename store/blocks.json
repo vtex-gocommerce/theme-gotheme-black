@@ -133,6 +133,11 @@
       "blockClass": "main-header"
     }
   },
+  "login": {
+    "props": {
+      "showIconProfile": true
+    }
+  },
   "vtex.menu@2.x:menu#category-menu": {
     "children": [
       "menu-item#category-clothing",

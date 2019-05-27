@@ -1,8 +1,8 @@
 .container {
     box-sizing: border-box;
-    transition: .2s;
+    transition: .3s;
 }
 
 .container:hover {
-    box-shadow: 0 2px 5px rgba(0,0,0,.15);
+    box-shadow: 0 1px 10px rgba(0,0,0,.070);
 }

@@ -70,4 +70,12 @@
     .paymentMatrixItem {
         width: 100%;
     }
+
+    .list {
+        display: block;
+    }
+
+    .listItem {
+        display: inline-block;
+    }
 }

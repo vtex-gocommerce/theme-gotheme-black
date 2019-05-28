@@ -527,7 +527,7 @@
 
   "shelf#home": {
     "blocks": [
-      "product-summary"
+      "product-summary.shelf"
     ],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
@@ -542,7 +542,7 @@
           "showBadge": true,
           "badgeText": "OFF",
           "buyButtonText": "Comprar",
-          "displayBuyButton": "displayButtonAlways",
+          "displayBuyButton": false,
           "showCollections": false,
           "showListPrice": true,
           "showLabels": false,
@@ -558,9 +558,17 @@
     }
   },
 
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-price"
+    ]
+  },
+
   "shelf#home2": {
     "blocks": [
-      "product-summary"
+      "product-summary.shelf#2"
     ],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
@@ -575,7 +583,7 @@
           "showBadge": true,
           "badgeText": "OFF",
           "buyButtonText": "Comprar",
-          "displayBuyButton": "displayButtonAlways",
+          "displayBuyButton": false,
           "showCollections": false,
           "showListPrice": true,
           "showLabels": false,
@@ -591,6 +599,13 @@
     }
   },
 
+  "product-summary.shelf#2": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-price"
+    ]
+  },
 
 
   "info-card#home": {
@@ -916,6 +931,11 @@
         "showSku": false,
         "showProductReference": false
       }
+    }
+  },
+  "buy-button": {
+    "props": {
+      "isOneClickBuy": true
     }
   },
   "search-result": {

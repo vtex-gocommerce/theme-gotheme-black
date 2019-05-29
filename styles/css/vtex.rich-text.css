@@ -1,0 +1,15 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container > div {
+    width: 100%;
+    text-align: center;
+}
+
+.container [class*="paragraph"] {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 40px 0 0;
+}

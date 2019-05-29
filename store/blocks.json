@@ -4,10 +4,39 @@
       "carousel#home",
       "flex-layout.row#tarja",
       "flex-layout.row#carousel",
-      "shelf#home2",
-      "shelf#home",
+      "rich-text#categoryTitle",
+      "search-result#home",
       "newsletter"
     ]
+  },
+
+  "search-result#home": {
+    "blocks": [
+      "search-title",
+      "filter-navigator.v2",
+      "gallery#home",
+      "not-found"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "blockClass": "home"
+    }
+  },
+
+  "gallery#home": {
+    "props": {
+      "mobileLayoutMode": "small"
+    },
+    "blocks": [
+      "product-summary"
+    ]
+  },
+
+  "rich-text#categoryTitle": {
+    "props": {
+      "text": "Lançamentos",
+      "blockClass": "title"
+    }
   },
 
   "header": {

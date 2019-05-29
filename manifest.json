@@ -1,7 +1,7 @@
 {
   "vendor": "gocommerce",
   "name": "go-theme",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "title": "GoTheme Black",
   "builders": {
     "styles": "1.x",
@@ -34,5 +34,6 @@
     "vtex.rich-text": "0.x",
     "vtex.sandbox": "0.x",
     "vtex.store-drawer": "0.x"
-  }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

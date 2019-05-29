@@ -6,3 +6,13 @@
     top: 2px;
     position: relative;
 }
+
+.gallery {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.container--home [class*="switch"] {
+    display: none;
+} 

@@ -16,3 +16,7 @@
 .container--home [class*="switch"] {
     display: none;
 } 
+
+.buttonShowMore {
+    display: none;
+}

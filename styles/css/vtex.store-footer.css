@@ -1,9 +1,22 @@
-.row--menu-row {
-    margin-top: 40px;
+.row--menu-row [class*="styledLinkContainer"] {
+    margin: 0 20px 0 0;
+
 }
 
 .row {
-    padding: 20px 0;
+    padding: 40px 0;
+    background: #000;
+}
+
+.row--menu-row [class*="styledLink"] {
+    color: #fff;
+}
+
+.rowContainer [class*="paragraph"] {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    color: #999;
 }
 
 .listTitle {

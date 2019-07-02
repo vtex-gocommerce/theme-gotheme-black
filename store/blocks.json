@@ -19,7 +19,8 @@
     ],
     "props": {
       "pagination": "show-more",
-      "blockClass": "home"
+      "blockClass": "home",
+      "maxItemsPerPage": 8
     }
   },
 
@@ -664,110 +665,498 @@
     }
   },
 
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [ 
+      "footer-row#1-desktop",
+      "footer-row#2-desktop",
+      "footer-row#3-desktop"
+    ]
+  },
+  "footer-row#1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#Products",
+      "vtex.menu@2.x:menu#footer-decoration",
+      "footer-spacer",
+      "social-networks"
+    ],
     "props": {
-      "showPaymentFormsInColor": true,
-      "showSocialNetworksInColor": false,
-      "showVtexLogoInColor": false,
-      "socialNetworks": [
-        {
-          "__editorItemTitle": "Facebook",
-          "socialNetwork": "Facebook",
-          "url": "https://www.facebook.com/"
-        },
-        {
-          "__editorItemTitle": "Instagram",
-          "socialNetwork": "Instagram",
-          "url": "https://www.instagram.com/"
-        }
-      ],
-      "sectionLinks": [
-        {
-          "__editorItemTitle": "Institucional",
-          "title": "Institucional",
-          "links": [
-            {
-              "__editorItemTitle": "Quem Somos",
-              "title": "Quem Somos",
-              "url": "/quem-somos"
-            },
-            {
-              "__editorItemTitle": "Política de troca e devoluções",
-              "title": "Política de troca e devoluções",
-              "url": "/politica-de-troca-e-devolucoes"
-            },
-            {
-              "__editorItemTitle": "Segurança e Privacidade",
-              "title": "Segurança e Privacidade",
-              "url": "/seguranca-e-privacidade"
-            }
-          ]
-        },
-        {
-          "__editorItemTitle": "Ajuda e Suporte",
-          "title": "Ajuda e Suporte",
-          "links": [
-            {
-              "__editorItemTitle": "Fale Conosco",
-              "title": "Fale Conosco",
-              "url": "/fale-conosco"
-            },
-            {
-              "__editorItemTitle": "Dúvidas frequentes",
-              "title": "Dúvidas frequentes",
-              "url": "/duvidas-frequentes"
-            },
-            {
-              "__editorItemTitle": "Formas de pagamento",
-              "title": "Formas de pagamento",
-              "url": "/formas-de-pagamento"
-            }
-          ]
-        }
-      ],
-      "badges": [],
-      "paymentForms": [
-        {
-          "__editorItemTitle": "Crédito",
-          "title": "Crédito",
-          "paymentTypes": ["MasterCard", "Visa", "Diners Club"]
-        }
-      ],
-      "storeInformations": [
-        {
-          "__editorItemTitle": "Informação da Loja",
-          "storeInformation": "Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pela nossa Loja. O valor de oferta do produto será garantido após a finalização da compra. Havendo divergência, prevalecerá o menor preço ofertado. \n\n\n"
-        },
-        {
-          "__editorItemTitle": "Endereço",
-          "storeInformation": "Av. Brg. Faria Lima, 4440 - Itaim Bibi, São Paulo - SP, 04538-132"
-        }
-      ]
+      "blockClass": "menu-row"
     }
   },
-  
+
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#news",
+      "menu-item#blackfriday",
+      "menu-item#sale",
+      "menu-item#personalization"
+    ]
+  },
+  "menu-item#news": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Quem Somos",
+        "text": "Quem Somos"
+      }
+    }
+  },
+  "menu-item#blackfriday": {
+    "props": {
+      "id": "menu-item-how-to-buy",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Como Comprar",
+        "text": "Como Comprar"
+      }
+    }
+  },
+  "menu-item#sale": {
+    "props": {
+      "id": "menu-item-policy",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Política de Trocas e Devoluções",
+        "text": "Política de Trocas e Devoluções"
+      }
+    }
+  },
+  "menu-item#personalization": {
+    "props": {
+      "id": "menu-item-contact",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Contato",
+        "text": "Contato"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-decoration": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#smartphones",
+      "menu-item#videogames",
+      "menu-item#tvs",
+      "menu-item#feminino"
+    ]
+  },
+
+  "menu-item#smartphones": {
+    "props": {
+      "id": "menu-item-smartphones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Smartphones",
+        "text": "Smartphones"
+      }
+    }
+  },
+
+  "menu-item#videogames": {
+    "props": {
+      "id": "menu-item-videogames",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Videogames",
+        "text": "Videogames"
+      }
+    }
+  },
+
+  "menu-item#feminino": {
+    "props": {
+      "id": "menu-item-feminino",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Feminino",
+        "text": "Feminino"
+      }
+    }
+  },
+
+
+  "menu-item#tvs": {
+    "props": {
+      "id": "menu-item-tvs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tvs",
+        "noFollow": true,
+        "tagTitle": "TVs",
+        "text": "TVs"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-bags": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#bags",
+      "menu-item#backpacks",
+      "menu-item#necessaire"
+    ]
+  },
+
+
+
+  "menu-item#bags": {
+    "props": {
+      "id": "menu-item-bags",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/d",
+        "noFollow": true,
+        "tagTitle": "Bags",
+        "text": "Bags"
+      }
+    }
+  },
+
+
+  "menu-item#backpacks": {
+    "props": {
+      "id": "menu-item-backpacks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/backpacks",
+        "noFollow": true,
+        "tagTitle": "Backpacks",
+        "text": "Backpacks"
+      }
+    }
+  },
+
+
+
+  "menu-item#necessaire": {
+    "props": {
+      "id": "menu-item-necessaire",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/necessaire",
+        "noFollow": true,
+        "tagTitle": "Necessaire",
+        "text": "Necessaire"
+      }
+    }
+  },
+
+
+
+  "vtex.menu@2.x:menu#footer-clothing": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#tank-tops",
+      "menu-item#shirts",
+      "menu-item#sweatshirt",
+      "menu-item#cropped"
+    ]
+  },
+
+
+  "menu-item#clothing": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    }
+  },
+
+  "menu-item#shorts": {
+    "props": {
+      "id": "menu-item-shorts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shorts",
+        "noFollow": false,
+        "tagTitle": "Shorts",
+        "text": "Shorts"
+      }
+    }
+  },
+
+  "menu-item#tank-tops": {
+    "props": {
+      "id": "menu-item-tank-tops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/tank-tops",
+        "noFollow": false,
+        "tagTitle": "Tank tops",
+        "text": "Tank tops"
+      }
+    }
+  },
+
+  "menu-item#shirts": {
+    "props": {
+      "id": "menu-item-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shirts",
+        "noFollow": false,
+        "tagTitle": "Shirts",
+        "text": "Shirts"
+      }
+    }
+  },
+
+  "menu-item#sweatshirt": {
+    "props": {
+      "id": "menu-item-sweat-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/sweatshirt",
+        "noFollow": false,
+        "tagTitle": "Sweatshirt",
+        "text": "Sweatshirt"
+      }
+    }
+  },
+
+
+
+  "menu-item#cropped": {
+    "props": {
+      "id": "menu-item-cropped",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/cropped",
+        "noFollow": false,
+        "tagTitle": "Cropped",
+        "text": "Cropped"
+      }
+    }
+  },
+
   "social-networks": {
     "props": {
       "socialNetworks": [
         {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
           "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
+          "url": "https://www.instagram.com/madinejeans/"
         },
         {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
+          "name": "Facebook",
+          "url": "https://www.facebook.com/Madine-jeans-400328800823539/"
         }
       ]
     }
   },
+
+  "footer-row#2-desktop": {
+    "children": [
+      "accepted-payment-methods",
+      "footer-spacer",
+      "powered-by"
+    ],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "powered-by": {
+    "props": {
+      "showInColor": false,
+      "logoUrl": "gocommerce.com"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": [
+        "MasterCard", "Visa", "Diners Club"
+      ],
+      "showInColor": true
+    }
+  },
+
+  
+  "footer-row#3-desktop": {
+    "children": [
+      "rich-text#footer"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pela nossa Loja. O valor de oferta do produto será garantido após a finalização da compra. Havendo divergência, prevalecerá o menor preço ofertado.",
+      "blockClass": "footer"
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "footer-row#2-mobile",
+      "footer-row#1-mobile",
+      "footer-row#4-mobile",
+      "footer-row#3-mobile"
+    ]
+  },
+  "footer-row#1-mobile": {
+    "children": [
+      "accepted-payment-methods"
+    ],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "footer-row#2-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#Products"
+    ],
+    "props": {
+      "blockClass": "cat"
+    }
+  },
+  "footer-row#3-mobile": {
+    "children": [
+      "powered-by"
+    ],
+    "props": {
+      "blockClass": "powered-by"
+    }
+  },
+  "footer-row#4-mobile": {
+    "children": [
+      "social-networks"
+    ],
+    "props": {
+      "blockClass": "social"
+    }
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   "store.home.custom#quem-somos": {

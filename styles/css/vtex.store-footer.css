@@ -91,4 +91,13 @@
     .listItem {
         display: inline-block;
     }
+
+    .rowContainer {
+        display: block;
+    }
+
+    .row--cat [class*="styledLink"] {
+        color: #fff;
+    }
+
 }

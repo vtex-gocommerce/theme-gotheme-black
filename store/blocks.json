@@ -151,7 +151,7 @@
 
   "header-row#4-desktop": {
     "children": [
-      "logo",
+      "logo.auto-image",
       "header-spacer",
       "search-bar",
       "header-spacer",
@@ -320,9 +320,9 @@
       "menu-item#category-clothing-shoes"
     ]
   },
-  "logo": {
+  "logo.auto-image": {
     "props": {
-      "title": "Logo",
+      "title": "logo",
       "href": "/",
       "width": 200,
       "height": 100,
@@ -363,7 +363,7 @@
   "header-row#1-mobile": {
     "children": [
       "drawer",
-      "logo",
+      "logo.auto-image",
       "header-spacer",
       "login",
       "minicart"
@@ -667,6 +667,11 @@
 
   
   
+
+
+
+
+
 
 
 
@@ -1037,12 +1042,20 @@
     "props": {
       "socialNetworks": [
         {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/madinejeans/"
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
         },
         {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/Madine-jeans-400328800823539/"
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
         }
       ]
     }
@@ -1107,7 +1120,8 @@
   },
   "footer-row#2-mobile": {
     "children": [
-      "vtex.menu@2.x:menu#Products"
+      "vtex.menu@2.x:menu#Products",
+      "vtex.menu@2.x:menu#footer-decoration"
     ],
     "props": {
       "blockClass": "cat"

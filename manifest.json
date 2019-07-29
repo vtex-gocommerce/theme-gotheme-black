@@ -1,7 +1,7 @@
 {
   "vendor": "gocommerce",
   "name": "go-theme",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "GoTheme Black",
   "builders": {
     "styles": "1.x",

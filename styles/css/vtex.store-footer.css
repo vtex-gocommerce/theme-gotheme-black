@@ -1,6 +1,5 @@
 .row--menu-row [class*="styledLinkContainer"] {
     margin: 0 20px 0 0;
-
 }
 
 .row {
@@ -10,6 +9,10 @@
 
 .row--menu-row [class*="styledLink"] {
     color: #fff;
+}
+
+.row--menu-row .rowContainer {
+    align-items: flex-start;
 }
 
 .rowContainer [class*="paragraph"] {

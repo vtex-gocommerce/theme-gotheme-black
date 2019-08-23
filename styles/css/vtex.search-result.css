@@ -17,6 +17,7 @@
     display: none;
 } 
 
-.buttonShowMore {
+.container--home .buttonShowMore {
     display: none;
 }
+

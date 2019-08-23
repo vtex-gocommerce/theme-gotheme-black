@@ -703,8 +703,6 @@
   "footer-row#1-desktop": {
     "children": [
       "menu.content",
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-decoration",
       "footer-spacer",
       "social-networks"
     ],
@@ -1121,9 +1119,7 @@
   },
   "footer-row#2-mobile": {
     "children": [
-      "menu.content",
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-decoration"
+      "menu.content"
     ],
     "props": {
       "blockClass": "cat"

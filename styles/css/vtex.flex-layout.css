@@ -7,7 +7,7 @@
     margin: 20px auto 0;
 }
 
-.stretchChildrenWidth {
+.flexRow--mini-banners .stretchChildrenWidth, .flexRow--tarja-banners .stretchChildrenWidth {
     padding: 20px;
 }
 

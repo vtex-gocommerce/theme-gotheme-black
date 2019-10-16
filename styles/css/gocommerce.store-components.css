@@ -1,0 +1,26 @@
+.logoContainer {
+    height: 70px;
+    max-height: 100px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 40px;
+}
+
+.logoContainer img {
+    height: auto!important;
+    position: absolute;
+    width: auto;
+    max-width: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    max-height: 80%;
+}
+
+@media screen and (max-width: 40rem) {
+    .logoContainer img {
+        max-width: 100%;
+    }
+}

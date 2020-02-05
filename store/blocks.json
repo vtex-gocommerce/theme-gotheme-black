@@ -160,7 +160,7 @@
       "search-bar",
       "header-spacer",
       "login",
-      "minicart"
+      "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -341,22 +341,6 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-  "minicart": {
-    "blocks": [
-      "product-summary"
-    ],
-    "props": {
-      "type": "popup",
-      "showRemoveButton": true,
-      "showDiscount": true,
-      "showSku": true,
-      "labelMiniCartEmpty": "",
-      "labelButtonFinishShopping": "Finalizar compra",
-      "enableQuantitySelector": true,
-      "maxQuantity": 10,
-      "labelClasses": "gray"
-    }
-  },
 
   "header-layout.mobile": {
     "children": [
@@ -370,7 +354,7 @@
       "logo.auto-image",
       "header-spacer",
       "login",
-      "minicart"
+      "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -1208,11 +1192,105 @@
 
 
   "store.product": {
-    "blocks": [
-      "product-details#default",
-      "product-kit",
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main",
+      "flex-layout.row#description",
       "shelf.relatedProducts"
     ]
+  },
+  "flex-layout.col#product-image": {
+    "children": ["flex-layout.row#product-image"]
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7
+    },
+    "children": ["product-description"]
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7
+    },
+    "children": ["flex-layout.col#product-image", "flex-layout.col#right-col"]
+  },
+
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+
+  "flex-layout.row#product-image": {
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "vtex.store-components:product-name",
+      "product-price#product-details",
+      "product-separator",
+      "sku-selector",
+      "flex-layout.row#buy-button",
+      "availability-subscriber",
+      "shipping-simulator",
+      "share#default"
+    ]
+  },
+
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true
+    }
+  },
+
+  "product-price#product-details": {
+    "props": {
+      "showInstallments": true,
+      "showSavings": true
+    }
+  },
+
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": ["add-to-cart-button"]
+  },
+
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
+      }
+    }
   },
 
 
@@ -1335,45 +1413,7 @@
 
 
 
-
-  "product-details#default": {
-    "blocks": [
-      "breadcrumb",
-      "product-name",
-      "product-images",
-      "product-price",
-      "product-description",
-      "product-specifications",
-      "buy-button",
-      "sku-selector",
-      "shipping-simulator",
-      "availability-subscriber",
-      "share"
-    ],
-    "props": {
-      "displayVertically": true,
-      "share": {
-        "social": {
-          "Facebook": true,
-          "WhatsApp": true,
-          "Twitter": false
-        }
-      },
-      "price": {
-        "labelSellingPrice": null,
-        "showListPrice": true,
-        "showLabels": true,
-        "showInstallments": true,
-        "showSavings": true
-      },
-      "name": {
-        "showBrandName": false,
-        "showSku": false,
-        "showProductReference": false
-      }
-    }
-  },
-  "buy-button": {
+  "add-to-cart-button": {
     "props": {
       "isOneClickBuy": true
     }

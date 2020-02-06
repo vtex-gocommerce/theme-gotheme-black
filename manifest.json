@@ -44,5 +44,12 @@
     "vtex.add-to-cart-button": "0.x",
     "vtex.product-specification-badges": "0.x"
   },
+  "billingOptions": {
+    "free": true
+  },
+  "categories": [
+    "gocommerce",
+    "themes"
+  ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
